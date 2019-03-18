@@ -33,7 +33,7 @@ keys-{{env}}:
       - label: black
     - prefs:
       - template: {{ salt['pillar.get']('build-infra:keys-template', 'fedora-28-minimal') }}
-      - netvm: none
+      - netvm: ""
 
 /etc/qubes-rpc/policy/qubesbuilder.LogReceived+build-{{env}}:
   file.managed:
